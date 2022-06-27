@@ -1,17 +1,20 @@
 <div class="container">
-    <div class="product-imgs">
+    <div class="product-imgs desktop-view">
         <img class="main-img" src="../../assets/images/image-product-1.jpg">
-        <div class="product-thumbnails">
-            <img src="../../assets/images/image-product-1-thumbnail.jpg" />
-            <img src="../../assets/images/image-product-2-thumbnail.jpg" />
-            <img src="../../assets/images/image-product-3-thumbnail.jpg" />
-            <img src="../../assets/images/image-product-4-thumbnail.jpg" />
-        </div>
+            <ng-image-slider [images]="imgCollectionDesktop" [infinite]="false" [showArrow] = "false"
+            [imageSize]="{width: '35%', height: 120, space:5}"  #nav></ng-image-slider>
     </div>
+
+
+    <div class="product-imgs  mobile-view">
+            <ng-image-slider [images]="imgCollectionMobile" [infinite]="false" [showArrow] = "true"
+            [imageSize]="{width: '100%', height: '40%', space:1}"  #nav></ng-image-slider>
+    </div>
+
     <div class="product-info">
         <h5> Sneaker Company </h5>
         <h1> Fall Limited Edition Sneakers </h1>
-        <p class = "text">
+        <p class="text">
             These low-profile sneakers are your perfect casual wear companion. Featuring a
             durable rubber outer sole, they’ll withstand everything the weather can offer.
         </p>
