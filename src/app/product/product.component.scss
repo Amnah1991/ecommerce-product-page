@@ -8,7 +8,7 @@
 
 .product-imgs.desktop-view {
     display: flex;
-    width: 60%;
+    width: 50%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -20,18 +20,14 @@
     }
 
     ng-image-slider {
-        width: inherit;
+        width: 60%;
         margin-top: 20px;
     }
-
 }
-
 
 .product-imgs.mobile-view {
     display: none;
 }
-
- 
 
 .product-info {
     width: 50%;
@@ -165,8 +161,6 @@ svg {
     width: 100%;
 }
 
-
-
 @media only screen and (max-width: 1200px) {
     .container {
         flex-direction: column;
@@ -211,18 +205,13 @@ svg {
         height: 100%;
         width: 100%;
         gap: 10px;
+        margin-bottom: 100px;
     }
 
     .add-btn {
         height: 90px;
-    } 
-
+    }
 }
-
-
-
-
-
 
 @media only screen and (max-width: 700px) {
     .product-info {
