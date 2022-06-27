@@ -1,0 +1,173 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+}
+
+.product-imgs {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .main-img {
+        border-radius: 15px;
+        width: 60%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+.product-thumbnails {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    img {
+        border-radius: 15px;
+        width: 14%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.product-info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h5 {
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: 18p;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 45px;
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+.text {
+    color: grey;
+    font-size: 16px;
+    width: 90%;
+    margin-bottom: 40px;
+    width: 50%;
+}
+
+.product-price {
+    display: flex;
+    flex-direction: column;
+}
+
+strong {
+    font-size: 25px;
+}
+
+.after-price {
+    display: flex;
+    gap: 15px;
+}
+
+.discount-label {
+    background-color: hsl(25, 100%, 94%);
+    padding: 2px 4px;
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.before-price {
+    text-decoration: line-through;
+    color: rgb(187, 186, 186);
+    padding-top: 10px;
+}
+
+svg {
+    transform: scale(0.8);
+    path {
+        fill: white !important;
+    }
+}
+
+.add-btn {
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.action-btn {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.amount {
+    display: flex;
+    height: 100%;
+    width: 20%;
+}
+
+.dec-btn,
+.inc-btn {
+    background-color: hsl(223, 64%, 98%);
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    align-self: center;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.inc-btn {
+    border-radius: 0 10px 10px 0;
+}
+
+.number {
+    background-color: hsl(223, 64%, 98%);
+    height: 50px;
+    padding: 0px 30px;
+    margin-bottom: 0;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    align-self: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .action-btn{
+      flex-direction: column;
+    }
+
+}
